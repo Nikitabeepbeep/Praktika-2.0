@@ -1,0 +1,17 @@
+﻿<Window x:Class="Vasilchugov_Aminov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vasilchugov_Aminov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Button ToolTip="Для работы с БД нужно ввест корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" Margin="37,22,0,0" VerticalAlignment="Top" Height="43" Width="154" Click="Button_Click_1"/>
+        <Button ToolTip="Открытие файла" Content="Файл" HorizontalAlignment="Left" Margin="204,22,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click"/>
+        <Button ToolTip="Настройки программы" Content="Настройки" HorizontalAlignment="Left" Margin="304,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click2"/>
+        <Button ToolTip="Сведения о программе" Content="О программе" HorizontalAlignment="Left" Margin="408,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click3"/>
+        <Button ToolTip="Очищает 'Панель'" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="727" Click="Button_Click4"/>
+
+    </Grid>
+</Window>
