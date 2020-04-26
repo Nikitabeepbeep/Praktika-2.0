@@ -1,37 +1,27 @@
 ﻿using NLog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
 namespace Vasilchugov_Aminov
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-                public partial class MainWindow : Window
+    public partial class MainWindow : Window
+
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
         public MainWindow()
-            {
-                InitializeComponent();
-
-             
-            }
-            //присоедение к БД
-            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            InitializeComponent();
+        }
+        //присоедение к БД
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TaskWindowBD taskWindow = new TaskWindowBD();
+            taskWindow.Owner = this;
+            taskWindow.Show();
         }
         //файл
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -41,17 +31,27 @@ namespace Vasilchugov_Aminov
         //настройки
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-
+            Settings taskWindow = new Settings();
+            taskWindow.Show();
         }
         //о программе
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
-
+            var sb = new StringBuilder();
+            sb.AppendLine("Программа пока непонятно о чём");
+            sb.AppendLine("Сделана двумя студентами из группы 9ИСП-391к-17");
+            sb.AppendLine("Создатели: ");
+            sb.AppendLine("Аминов В.Т(9ИСП-391к-17)");
+            sb.AppendLine("Васильчугов Н.А(9ИСП-391к-17)");
+            sb.AppendLine("Наша ссылка на GitHub:");
+            sb.AppendLine("https://github.com/Nikitabeepbeep/Praktika-2.0");
+            MessageBox.Show(sb.ToString());
         }
         //очистить
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Поле отображения  очищено!");
         }
     }
 }
+

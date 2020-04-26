@@ -1,0 +1,16 @@
+﻿<Window x:Class="Vasilchugov_Aminov.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vasilchugov_Aminov"
+        mc:Ignorable="d"
+        Title="Settings" Height="350" Width="250">
+    <Grid>
+        <CheckBox Content="Чекбокс" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" Height="50" Width="138"/>
+        <RadioButton Content="Радиобатон" HorizontalAlignment="Left" Margin="60,117,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="60,167,0,0" Text="Текстбокс" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Закрыть" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Height="21" Width="66" Click="Button_Click"/>
+
+    </Grid>
+</Window>
