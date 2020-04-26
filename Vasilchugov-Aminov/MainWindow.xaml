@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid>
-        <Button ToolTip="Для работы с БД нужно ввест корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" Margin="37,22,0,0" VerticalAlignment="Top" Height="43" Width="154" Click="Button_Click_1"/>
+        <Button ToolTip="Для работы с БД нужно ввести корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" Margin="37,22,0,0" VerticalAlignment="Top" Height="43" Width="154" Click="Button_Click_1"/>
         <Button ToolTip="Открытие файла" Content="Файл" HorizontalAlignment="Left" Margin="204,22,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click"/>
         <Button ToolTip="Настройки программы" Content="Настройки" HorizontalAlignment="Left" Margin="304,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click2"/>
         <Button ToolTip="Сведения о программе" Content="О программе" HorizontalAlignment="Left" Margin="408,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click3"/>

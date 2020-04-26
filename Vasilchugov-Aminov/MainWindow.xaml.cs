@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,14 +19,17 @@ namespace Vasilchugov_Aminov
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+                public partial class MainWindow : Window
     {
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public MainWindow()
-        {
-            InitializeComponent();
-        }
-        //присоедение к БД
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+            {
+                InitializeComponent();
+
+             
+            }
+            //присоедение к БД
+            private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
         }
