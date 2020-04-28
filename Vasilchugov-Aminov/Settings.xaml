@@ -10,7 +10,7 @@
         <CheckBox Content="Чекбокс" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" Height="50" Width="138"/>
         <RadioButton Content="Радиобатон" HorizontalAlignment="Left" Margin="60,117,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="60,167,0,0" Text="Текстбокс" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Закрыть" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Height="21" Width="66" Click="Button_Click"/>
+        <Button ToolTip="Позволяет закрыть окно натсроек" Content="Закрыть" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Height="21" Width="66" Click="Button_Click"/>
 
     </Grid>
 </Window>

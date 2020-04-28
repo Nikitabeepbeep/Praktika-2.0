@@ -7,22 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid RenderTransformOrigin="0.5,0.5">
-        <Button ToolTip="Очищает 'Панель'" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="728" Click="Button_Click4"/>
+        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="728" Click="Button_Click4"/>
         <Menu Margin="36,27,20,505" Visibility="Visible">
-            <MenuItem Header="Файл" Click="MenuItem_Click">
-                <MenuItem Header="Открыть" Click="newbutton">
-                </MenuItem>
-                <Separator></Separator>
-                <MenuItem Header="Сохранить"></MenuItem>
-            </MenuItem>
-            <MenuItem Header="Модули">
-                <Separator></Separator>
-                <MenuItem Header="Присоединение к БД" Click="Baza_dannyx">
-                </MenuItem>
-                <MenuItem Header="Настройки" Click="Button_Click2">
+            <MenuItem ToolTip="Позволяет открыть файлы" Header="Файл" Click="MenuItem_Click">
+                <MenuItem ToolTip=" Позволяет выбрать текстовый файл для открытия"  Header="Открыть текстовый файл" Click="newbutton">
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="О программе" Click="Button_Click3">
+            <MenuItem ToolTip="Открывает модули программы" Header="Модули">
+                <Separator></Separator>
+                <MenuItem ToolTip=" Позволяет присоединиться к базе данных" Header="Присоединение к БД" Click="Baza_dannyx">
+                </MenuItem>
+                <MenuItem ToolTip=" Позволяет изменять настройки главного окна" Header="Настройки" Click="Button_Click2">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
             </MenuItem>
         </Menu>
         <DockPanel LastChildFill="False" Margin="36,120,36,101"/>
