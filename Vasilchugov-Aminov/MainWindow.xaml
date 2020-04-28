@@ -8,23 +8,24 @@
         Title="MainWindow" Height="600" Width="800">
     <Grid RenderTransformOrigin="0.5,0.5">
         <Button ToolTip="Очищает 'Панель'" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="728" Click="Button_Click4"/>
-        <Menu Margin="36,27,20,483" Visibility="Visible">
+        <Menu Margin="36,27,20,505" Visibility="Visible">
             <MenuItem Header="Файл" Click="MenuItem_Click">
-                <MenuItem Header="Открыть">
-                    <Button ToolTip="Открытие файла" Content="Открыть" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click" RenderTransformOrigin="0.931,0.954"/>
+                <MenuItem Header="Открыть" Click="newbutton">
                 </MenuItem>
                 <Separator></Separator>
                 <MenuItem Header="Сохранить"></MenuItem>
             </MenuItem>
-            <MenuItem Header="Редактировать">
+            <MenuItem Header="Модули">
                 <Separator></Separator>
-                <MenuItem Header="Вырезать"></MenuItem>
-                <MenuItem Header="Скопировать"></MenuItem>
-                <MenuItem Header="Вставить"></MenuItem>
+                <MenuItem Header="Присоединение к БД" Click="Baza_dannyx">
+                </MenuItem>
+                <MenuItem Header="Настройки" Click="Button_Click2">
+                </MenuItem>
             </MenuItem>
-            <Button ToolTip="Для работы с БД нужно ввести корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="146" Click="Button_Click_1" RenderTransformOrigin="-1,0.722"/>
-            <Button ToolTip="Сведения о программе" Content="О программе" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click3"/>
-            <Button ToolTip="Настройки программы" Content="Настройки"  Height="43" Width="87" Click="Button_Click2" RenderTransformOrigin="-0.864,2.21"/>
+            <MenuItem Header="О программе" Click="Button_Click3">
+            </MenuItem>
         </Menu>
+        <DockPanel LastChildFill="False" Margin="36,120,36,101"/>
+        <ListBox Name="kekk" Margin="112,157,112,149"/>
     </Grid>
 </Window>
