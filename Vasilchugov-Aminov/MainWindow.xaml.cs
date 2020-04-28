@@ -19,14 +19,16 @@ namespace Vasilchugov_Aminov
         //присоедение к БД
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            TaskWindowBD taskWindow = new TaskWindowBD();
+            DBConnectionForm taskWindow = new DBConnectionForm();
             taskWindow.Owner = this;
             taskWindow.Show();
         }
         //файл
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            AddTxtFile addTxtFile = new AddTxtFile();
+            addTxtFile.Show();
+                    
         }
         //настройки
         private void Button_Click2(object sender, RoutedEventArgs e)
@@ -51,6 +53,10 @@ namespace Vasilchugov_Aminov
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Поле отображения  очищено!");
+        }
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

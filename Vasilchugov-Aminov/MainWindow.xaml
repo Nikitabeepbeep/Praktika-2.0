@@ -7,11 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid RenderTransformOrigin="0.5,0.5">
-        <Button ToolTip="Для работы с БД нужно ввести корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" Margin="37,22,0,0" VerticalAlignment="Top" Height="43" Width="154" Click="Button_Click_1"/>
-        <Button ToolTip="Открытие файла" Content="Файл" HorizontalAlignment="Left" Margin="204,22,0,0" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click"/>
-        <Button ToolTip="Настройки программы" Content="Настройки" HorizontalAlignment="Left" Margin="304,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click2"/>
-        <Button ToolTip="Сведения о программе" Content="О программе" HorizontalAlignment="Left" Margin="408,22,0,0" VerticalAlignment="Top" Height="43" Width="88" Click="Button_Click3"/>
-        <Button ToolTip="Очищает 'Панель'" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="727" Click="Button_Click4"/>
-        <WrapPanel Margin="36,100,36,114" IsEnabled="True"/>
+        <Button ToolTip="Очищает 'Панель'" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="728" Click="Button_Click4"/>
+        <Menu Margin="36,27,20,483" Visibility="Visible">
+            <MenuItem Header="Файл" Click="MenuItem_Click">
+                <MenuItem Header="Открыть">
+                    <Button ToolTip="Открытие файла" Content="Открыть" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click" RenderTransformOrigin="0.931,0.954"/>
+                </MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Сохранить"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Редактировать">
+                <Separator></Separator>
+                <MenuItem Header="Вырезать"></MenuItem>
+                <MenuItem Header="Скопировать"></MenuItem>
+                <MenuItem Header="Вставить"></MenuItem>
+            </MenuItem>
+            <Button ToolTip="Для работы с БД нужно ввести корректные данные" Content="Присоединение к БД" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="146" Click="Button_Click_1" RenderTransformOrigin="-1,0.722"/>
+            <Button ToolTip="Сведения о программе" Content="О программе" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="87" Click="Button_Click3"/>
+            <Button ToolTip="Настройки программы" Content="Настройки"  Height="43" Width="87" Click="Button_Click2" RenderTransformOrigin="-0.864,2.21"/>
+        </Menu>
     </Grid>
 </Window>

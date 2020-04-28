@@ -1,0 +1,15 @@
+﻿<Window x:Class="Vasilchugov_Aminov.AddTxtFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vasilchugov_Aminov"
+        mc:Ignorable="d"
+        Title="AddTxtFile" Height="400" Width="400">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Margin="0,0,0,10">
+            <Button Content="Открыть" HorizontalAlignment="Center" VerticalAlignment="Center" Height="52" Width="286" Click="Button_Click"/>
+        </WrapPanel>
+        <ListBox Name="kekk" Margin="71,83,78,87"></ListBox>
+    </Grid>
+</Window>
