@@ -1,8 +1,4 @@
-﻿using Habanero.Faces.Base;
-using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 namespace Vasilchugov_Aminov
 {
