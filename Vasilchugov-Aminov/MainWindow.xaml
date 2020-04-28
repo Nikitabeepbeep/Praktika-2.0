@@ -7,10 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     <Grid RenderTransformOrigin="0.5,0.5">
-        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Center" Margin="0,518,0,0" VerticalAlignment="Top" Height="30" Width="728" Click="Button_Click4"/>
-        <Menu Margin="36,27,20,505" Visibility="Visible">
+        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Center" Margin="0,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4"/>
+        <Menu Margin="30,27,30,505" Visibility="Visible">
             <MenuItem ToolTip="Позволяет открыть файлы" Header="Файл" Click="MenuItem_Click">
-                <MenuItem ToolTip=" Позволяет выбрать текстовый файл для открытия"  Header="Открыть текстовый файл" Click="newbutton">
+                <Separator></Separator>
+                <MenuItem ToolTip=" Позволяет добавить текстовый файл "  Header="Добавить текстовый файл" Click="newbutton">
+                </MenuItem>
+                <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
+                </MenuItem>
+                <MenuItem ToolTip=" Позволяет выбрать изображение для открытия"  Header="Открыть изображение" Click="buttonOpen_Click">
                 </MenuItem>
             </MenuItem>
             <MenuItem ToolTip="Открывает модули программы" Header="Модули">
@@ -23,7 +28,20 @@
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
             </MenuItem>
         </Menu>
-        <DockPanel LastChildFill="False" Margin="36,120,36,101"/>
-        <ListBox Name="kekk" Margin="112,157,112,149"/>
+        <WrapPanel Margin="30,111,30,79" >
+            <ListBox x:Name="kekk" Height="50" Width="383"/>
+            <Button Content="" x:Name="buttonOpen" Click="buttonOpen_Click" Width="0"/>
+            <Image x:Name="kek"  Height="150" Width="384" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.05"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.332"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBox x:Name="textbox" Height="48" Width="383" TextChanged="textbox_TextChanged"/>
+        </WrapPanel>
     </Grid>
 </Window>

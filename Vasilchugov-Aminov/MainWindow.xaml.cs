@@ -1,8 +1,12 @@
 ﻿using Microsoft.Win32;
 using NLog;
 using System;
+using System.IO;
 using System.Text;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
+
 namespace Vasilchugov_Aminov
 {
     /// <summary>
@@ -33,6 +37,7 @@ namespace Vasilchugov_Aminov
         //очистить
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
+            WrapPanel wrapPanel = new WrapPanel();
             MessageBox.Show("Поле отображения  очищено!");
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
@@ -62,9 +67,25 @@ namespace Vasilchugov_Aminov
                     kekk.Items.Add(System.IO.Path.GetFileName(filename));
             }
         }
+        private void newbutton1(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                textbox.Text = File.ReadAllText(openFileDialog.FileName);
+        }
+        private void buttonOpen_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openDialog = new OpenFileDialog();
+            openDialog.Filter = "Image files (*.BMP, *.JPG, *.GIF, *.TIF, *.PNG, *.ICO, *.EMF, *.WMF)|*.bmp;*.jpg;*.gif; *.tif; *.png; *.ico; *.emf; *.wmf";
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {   
+            if (openDialog.ShowDialog() == true)
+            {
+                kek.Source = new BitmapImage(new Uri(openDialog.FileName));
+            }
+        }
+
+        private void textbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
