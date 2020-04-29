@@ -1,0 +1,24 @@
+﻿<Window x:Class="Vasilchugov_Aminov.MP3_PLAYER"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vasilchugov_Aminov"
+        mc:Ignorable="d"
+        Title="MP3_PLAYER" Height="200" Width="500">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Имя файла:"></TextBlock>
+            <TextBox x:Name="FileName" Width="260"></TextBox>
+            <Button ToolTip="Помогает выбрать файл для открытия" Content="Открыть" Click="Button_ClickOpen" Margin="10,0,0,0"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center">
+            <Button ToolTip="Воспроизводит композицию"  Content="Воспроизвести" Width="100" Height="20" Margin="10" Click="Button_ClickPlay"></Button>
+            <Button ToolTip="Ставит на паузу композицию"  Content="Пауза" Width="100" Height="20" Margin="10" Click="Button_ClicPause"></Button>
+            <Button ToolTip="Останавливает композицию" Content="Остановить" Width="100" Height="20" Margin="10" Click="Button_ClickStop"></Button>
+            <Button ToolTip="Закрывает модуль воспроизвидения аудио" Content="Закрыть" Width="100" Height="20" Margin="10" Click="DA"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

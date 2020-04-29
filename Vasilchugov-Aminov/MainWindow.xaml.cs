@@ -40,14 +40,6 @@ namespace Vasilchugov_Aminov
             WrapPanel wrapPanel = new WrapPanel();
             MessageBox.Show("Поле отображения  очищено!");
         }
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void MenuItem_Click1(object sender, RoutedEventArgs e)
-        {
-
-        }
         //присоединение к базе данных
         private void Baza_dannyx(object sender, RoutedEventArgs e)
         {
@@ -55,6 +47,7 @@ namespace Vasilchugov_Aminov
             taskWindow.Owner = this;
             taskWindow.Show();
         }
+        //откртыие файла
         private void newbutton(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -67,12 +60,14 @@ namespace Vasilchugov_Aminov
                     kekk.Items.Add(System.IO.Path.GetFileName(filename));
             }
         }
+        //чтение текста из файла
         private void newbutton1(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
                 textbox.Text = File.ReadAllText(openFileDialog.FileName);
         }
+        //открытие изображения
         private void buttonOpen_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openDialog = new OpenFileDialog();
@@ -83,10 +78,17 @@ namespace Vasilchugov_Aminov
                 kek.Source = new BitmapImage(new Uri(openDialog.FileName));
             }
         }
-
+        //текстбокс
         private void textbox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+        //mp3 плеер
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            MP3_PLAYER taskWindow = new MP3_PLAYER();
+            taskWindow.Owner = this;
+            taskWindow.Show();
         }
     }
 }

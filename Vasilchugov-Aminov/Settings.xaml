@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vasilchugov_Aminov"
         mc:Ignorable="d"
-        Title="Settings" Height="350" Width="250">
+        Title="Настройки" Height="350" Width="250">
     <Grid>
         <CheckBox Content="Чекбокс" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" Height="50" Width="138"/>
         <RadioButton Content="Радиобатон" HorizontalAlignment="Left" Margin="60,117,0,0" VerticalAlignment="Top"/>

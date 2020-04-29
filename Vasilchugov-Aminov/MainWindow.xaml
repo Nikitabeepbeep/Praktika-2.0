@@ -5,25 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vasilchugov_Aminov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="Главное окно программы" Height="600" Width="800">
     <Grid RenderTransformOrigin="0.5,0.5">
         <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Center" Margin="0,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4"/>
         <Menu Margin="30,27,30,505" Visibility="Visible">
-            <MenuItem ToolTip="Позволяет открыть файлы" Header="Файл" Click="MenuItem_Click">
-                <Separator></Separator>
-                <MenuItem ToolTip=" Позволяет добавить текстовый файл "  Header="Добавить текстовый файл" Click="newbutton">
-                </MenuItem>
-                <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
-                </MenuItem>
-                <MenuItem ToolTip=" Позволяет выбрать изображение для открытия"  Header="Открыть изображение" Click="buttonOpen_Click">
-                </MenuItem>
-            </MenuItem>
             <MenuItem ToolTip="Открывает модули программы" Header="Модули">
                 <Separator></Separator>
                 <MenuItem ToolTip=" Позволяет присоединиться к базе данных" Header="Присоединение к БД" Click="Baza_dannyx">
                 </MenuItem>
-                <MenuItem ToolTip=" Позволяет изменять настройки главного окна" Header="Настройки" Click="Button_Click2">
+                <MenuItem ToolTip=" Позволяет воспроизводить mp3 файлы" Header="Плеер" Click="MenuItem_Click_1">
                 </MenuItem>
+                <MenuItem ToolTip=" Позволяет выбрать изображение для открытия"  Header="Открыть изображение" Click="buttonOpen_Click">
+                </MenuItem>
+                <MenuItem ToolTip=" Позволяет добавить текстовый файл "  Header="Добавить текстовый файл" Click="newbutton">
+                </MenuItem>
+                <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem ToolTip=" Позволяет изменять настройки главного окна" Header="Настройки" Click="Button_Click2">
             </MenuItem>
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
             </MenuItem>
