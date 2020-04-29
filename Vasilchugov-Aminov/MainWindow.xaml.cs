@@ -25,7 +25,6 @@ namespace Vasilchugov_Aminov
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("Программа пока непонятно о чём");
             sb.AppendLine("Сделана двумя студентами из группы 9ИСП-391к-17");
             sb.AppendLine("Создатели: ");
             sb.AppendLine("Аминов В.Т");
