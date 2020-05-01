@@ -12,10 +12,4 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="NLog">
-      <HintPath>..\..\NLog.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
