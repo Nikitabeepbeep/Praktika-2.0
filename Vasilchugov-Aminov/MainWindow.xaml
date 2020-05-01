@@ -5,10 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vasilchugov_Aminov"
         mc:Ignorable="d"
-        Title="Главное окно программы" Height="600" Width="800">
+        Title="Главное окно программы" Height="600" Width="800" WindowStyle="ThreeDBorderWindow">
     <Grid RenderTransformOrigin="0.5,0.5">
-        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Center" Margin="0,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4"/>
-        <Menu Margin="30,27,30,505" Visibility="Visible">
+        <Grid.Style>
+            <Style/>
+        </Grid.Style>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="671*"/>
+            <ColumnDefinition Width="123*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Left" Margin="30,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4" Grid.ColumnSpan="2"/>
+        <Menu Margin="30,27,24,505" Visibility="Visible" Grid.ColumnSpan="2">
             <MenuItem ToolTip="Открывает модули программы" Header="Модули">
                 <Separator></Separator>
                 <MenuItem ToolTip=" Позволяет присоединиться к базе данных" Header="Присоединение к БД" Click="Baza_dannyx">
@@ -27,7 +35,7 @@
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
             </MenuItem>
         </Menu>
-        <WrapPanel Margin="30,111,30,79" >
+        <WrapPanel Margin="30,111,24,79" Grid.ColumnSpan="2" >
             <ListBox x:Name="kekk" Height="50" Width="383"/>
             <Button Content="" x:Name="buttonOpen" Click="buttonOpen_Click" Width="0"/>
             <Image x:Name="kek"  Height="150" Width="384" RenderTransformOrigin="0.5,0.5">

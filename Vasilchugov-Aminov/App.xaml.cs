@@ -13,5 +13,6 @@ namespace Vasilchugov_Aminov
     /// </summary>
     public partial class App : Application
     {
+        ILogger logger = new Logger();
     }
 }

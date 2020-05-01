@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
-using NLog;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -15,6 +15,8 @@ namespace Vasilchugov_Aminov
     public partial class MainWindow : Window
 
     {
+        public object BackgroundImage { get; private set; }
+
         //настройки
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
@@ -25,12 +27,15 @@ namespace Vasilchugov_Aminov
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("Сделана двумя студентами из группы 9ИСП-391к-17");
-            sb.AppendLine("Создатели: ");
+            sb.AppendLine("Выполнили:");
             sb.AppendLine("Аминов В.Т");
             sb.AppendLine("Васильчугов Н.А");
             sb.AppendLine("Наша ссылка на GitHub:");
             sb.AppendLine("https://github.com/Nikitabeepbeep/Praktika-2.0");
+            sb.AppendLine("Руководители:");
+            sb.AppendLine("Лебедев В.Н");
+            sb.AppendLine("Гурьянова С.В");
+            sb.AppendLine("Кашина М.А");
             MessageBox.Show(sb.ToString());
         }
         //очистить

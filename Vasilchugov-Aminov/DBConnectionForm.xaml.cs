@@ -1,5 +1,8 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Navigation;
+
 namespace Vasilchugov_Aminov
 {
     /// <summary>
@@ -82,6 +85,6 @@ namespace Vasilchugov_Aminov
                 dataSourceStirng += "Integrated Security=SSPI;";
             }
             return dataSourceStirng;
-        }                                  
+        }
     }
-    }
+}
