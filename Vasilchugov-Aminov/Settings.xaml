@@ -5,12 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Vasilchugov_Aminov"
         mc:Ignorable="d"
-        Title="Настройки" Height="350" Width="250">
+        Title="Настройки" Height="350" Width="250" Loaded="Window_Loaded">
     <Grid>
-        <CheckBox Content="Чекбокс" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top" Height="50" Width="138"/>
-        <RadioButton Content="Радиобатон" HorizontalAlignment="Left" Margin="60,117,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="60,167,0,0" Text="Текстбокс" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button ToolTip="Позволяет закрыть окно натсроек" Content="Закрыть" HorizontalAlignment="Center" Margin="0,275,0,0" VerticalAlignment="Top" Height="21" Width="66" Click="Button_Click"/>
+        <StackPanel Margin="20,68,20,67">
+            <ComboBox Name="change_color" SelectionChanged="change_color_SelectionChanged" Height="20">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Width="50" Height="50" Fill="{Binding Name}"/>
+                            <TextBlock Text="{Binding Name}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+        </StackPanel>
+
+
+
+
+
+
+
+
+        <Button ToolTip="Позволяет закрыть окно натсроек" Content="Закрыть" HorizontalAlignment="Center" Margin="0,287,0,0" VerticalAlignment="Top" Height="21" Width="66" Click="Button_Click"/>
+        <Label ToolTip="Меняет фон текущего окна" Content="Выбрать цвет фона текущего окна" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Width="210"/>
+
 
     </Grid>
 </Window>

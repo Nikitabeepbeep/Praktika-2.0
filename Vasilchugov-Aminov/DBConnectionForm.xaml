@@ -12,15 +12,15 @@
             <ColumnDefinition Width="52*"/>
             <ColumnDefinition Width="307*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Сервер" HorizontalAlignment="Left" Margin="27,59,0,0" VerticalAlignment="Top"/>
-        <Label Content="Имя базы данных" HorizontalAlignment="Left" Margin="27,125,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Название сервера" HorizontalAlignment="Left" Margin="27,59,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="170"/>
+        <Label Content="Название базы данных" HorizontalAlignment="Left" Margin="27,125,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="170"/>
         <Label Content="Имя пользователя" HorizontalAlignment="Left" Margin="27,191,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="27,279,0,0" VerticalAlignment="Top"/>
         <Button ToolTip="Позволяет закрыть окно для подключения к БД" Content="Закрыть" HorizontalAlignment="Left" Margin="27,360,0,0" VerticalAlignment="Top" Height="35" Width="170" Click="Button_Click1" Grid.ColumnSpan="3"/>
-        <TextBox x:Name="serverBox" HorizontalAlignment="Left" Margin="49,67,0,0" Text="DESKTOP-CPBTC2E" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" TextChanged="TextBox_TextChanged" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="dbNameBox" HorizontalAlignment="Left" Margin="49,125,0,0" Text="Интернет-магазин" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" TextChanged="TextBox_TextChanged_1" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Margin="49,199,0,0" Text="user" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" TextChanged="TextBox_TextChanged_2" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="userpassBox" HorizontalAlignment="Left" Margin="49,287,0,0" Text="user" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" TextChanged="TextBox_TextChanged_3" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="serverBox" HorizontalAlignment="Left" Margin="82,67,0,0" Text="DESKTOP-CPBTC2E" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TextBox_TextChanged" Grid.Column="2"/>
+        <TextBox x:Name="dbNameBox" HorizontalAlignment="Left" Margin="82,125,0,0" Text="Интернет-магазин" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" TextChanged="TextBox_TextChanged_1" Grid.Column="2"/>
+        <TextBox x:Name="usernameBox" HorizontalAlignment="Left" Margin="82,199,0,0" Text="user" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TextBox_TextChanged_2" Grid.Column="2"/>
+        <TextBox x:Name="userpassBox" HorizontalAlignment="Left" Margin="82,287,0,0" Text="user" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" TextChanged="TextBox_TextChanged_3" Grid.Column="2"/>
         <Button ToolTip="Позволяет подключиться к базе данных" x:Name="connectButton" Content="Подключение!" HorizontalAlignment="Left" Margin="116,360,0,0" VerticalAlignment="Top" Height="35" Width="168" Click="Button_Click_1" Grid.Column="2"/>
     </Grid>
 </Window>

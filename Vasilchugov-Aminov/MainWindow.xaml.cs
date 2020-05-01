@@ -1,6 +1,5 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -15,8 +14,6 @@ namespace Vasilchugov_Aminov
     public partial class MainWindow : Window
 
     {
-        public object BackgroundImage { get; private set; }
-
         //настройки
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
