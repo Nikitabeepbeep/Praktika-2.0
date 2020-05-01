@@ -29,6 +29,8 @@
                 </MenuItem>
                 <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
                 </MenuItem>
+                <MenuItem ToolTip="При нажатии на кнопку приложение закрывается" Header="Выход из программы" Click="exit_CLick">
+                </MenuItem>
             </MenuItem>
             <MenuItem ToolTip=" Позволяет изменять настройки главного окна" Header="Настройки" Click="Button_Click2">
             </MenuItem>

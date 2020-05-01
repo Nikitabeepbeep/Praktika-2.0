@@ -91,6 +91,13 @@ namespace Vasilchugov_Aminov
             taskWindow.Owner = this;
             taskWindow.Show();
         }
+        //выход из приложения
+        private void exit_CLick(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
     }
 }
+
 
