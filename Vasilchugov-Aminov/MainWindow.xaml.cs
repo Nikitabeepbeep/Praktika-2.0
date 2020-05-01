@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Windows;
@@ -24,12 +25,9 @@ namespace Vasilchugov_Aminov
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("Выполнили:");
-            sb.AppendLine("Аминов В.Т");
-            sb.AppendLine("Васильчугов Н.А");
-            sb.AppendLine("Наша ссылка на GitHub:");
-            sb.AppendLine("https://github.com/Nikitabeepbeep/Praktika-2.0");
-            sb.AppendLine("Руководители:");
+            sb.AppendLine("Данную программу выполнили студенты группы 9ИСП-391к-17(УКРТБ):");
+            sb.AppendLine("Аминов В.Т и Васильчугов Н.А");
+            sb.AppendLine("Руководители практики:");
             sb.AppendLine("Лебедев В.Н");
             sb.AppendLine("Гурьянова С.В");
             sb.AppendLine("Кашина М.А");
@@ -40,6 +38,7 @@ namespace Vasilchugov_Aminov
         {
             WrapPanel wrapPanel = new WrapPanel();
             MessageBox.Show("Поле отображения  очищено!");
+
         }
         //присоединение к базе данных
         private void Baza_dannyx(object sender, RoutedEventArgs e)
@@ -96,8 +95,14 @@ namespace Vasilchugov_Aminov
         {
             Environment.Exit(0);
         }
+        //сайт
+        private void Application_NavigationFailed(object sender,
+      RoutedEventArgs e)
+        {
+            Process.Start("explorer.exe", "https://github.com/Nikitabeepbeep/Praktika-2.0");
 
+        }
     }
-}
+    }
 
 

@@ -36,6 +36,15 @@
             </MenuItem>
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
             </MenuItem>
+            <TextBlock RenderTransformOrigin="0.5,0.5" Height="29" Width="229">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.319"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform><Hyperlink NavigateUri="https://github.com/Nikitabeepbeep/Praktika-2.0" Click="Application_NavigationFailed"><Run Text="Ссылка на наш репозиторий GitHub"/></Hyperlink></TextBlock>
         </Menu>
         <WrapPanel Margin="30,111,24,79" Grid.ColumnSpan="2" >
             <ListBox x:Name="kekk" Height="50" Width="383"/>
