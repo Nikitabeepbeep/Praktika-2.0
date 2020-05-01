@@ -21,7 +21,10 @@
                 <Separator></Separator>
                 <MenuItem ToolTip=" Позволяет присоединиться к базе данных" Header="Присоединение к БД" Click="Baza_dannyx">
                 </MenuItem>
-                <MenuItem ToolTip=" Позволяет воспроизводить mp3 файлы" Header="Плеер" Click="MenuItem_Click_1">
+                <MenuItem Name="mp3" ToolTip="Позволяет воспроизводить mp3 файлы" Header="Плеер" Click="MenuItem_Click_1">
+                    <MenuItem.Icon>
+                        <Image Source="Resources/play.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem ToolTip=" Позволяет выбрать изображение для открытия"  Header="Открыть изображение" Click="buttonOpen_Click">
                 </MenuItem>

@@ -86,6 +86,10 @@ namespace Vasilchugov_Aminov
         //mp3 плеер
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
+            mp3.Icon = new Image()
+            {
+                Source = new BitmapImage(new Uri("Resources/play.png", UriKind.Relative))
+            };
             MP3_PLAYER taskWindow = new MP3_PLAYER();
             taskWindow.Owner = this;
             taskWindow.Show();
