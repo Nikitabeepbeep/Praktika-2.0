@@ -15,7 +15,7 @@
             <ColumnDefinition Width="123*"/>
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
-        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Left" Margin="30,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4" Grid.ColumnSpan="2"/>
+        <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Left" Margin="30,526,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4" Grid.ColumnSpan="2"/>
         <Menu Margin="30,27,24,497" Visibility="Visible" Grid.ColumnSpan="2">
             <MenuItem ToolTip="Открывает модули программы" Header="Модули" Width="76">
                 <MenuItem.Icon>
@@ -79,9 +79,9 @@
             </MenuItem>
         </Menu>
         <WrapPanel Margin="30,111,24,79" Grid.ColumnSpan="2" >
-            <ListBox x:Name="kekk" Height="50" Width="383"/>
+            <ListBox x:Name="kekk" Height="50" Width="719"/>
             <Button Content="" x:Name="buttonOpen" Click="buttonOpen_Click" Width="0"/>
-            <Image x:Name="kek"  Height="150" Width="384" RenderTransformOrigin="0.5,0.5">
+            <Image x:Name="kek"  Height="150" Width="719" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -91,7 +91,7 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <TextBox x:Name="textbox" Height="48" Width="383" TextChanged="textbox_TextChanged"/>
+            <TextBox x:Name="textbox" Height="160" Width="719" TextChanged="textbox_TextChanged"/>
         </WrapPanel>
     </Grid>
 </Window>
