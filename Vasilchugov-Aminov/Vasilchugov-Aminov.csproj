@@ -51,4 +51,8 @@
     <Resource Include="Ресурсы\TXT.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Все DLL файлы\" />
+  </ItemGroup>
+
 </Project>
