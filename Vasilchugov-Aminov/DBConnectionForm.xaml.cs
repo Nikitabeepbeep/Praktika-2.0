@@ -67,7 +67,8 @@ namespace Vasilchugov_Aminov
                 MessageBox.Show("Пожалуйста,заполните поля!", "Ошибка соединения!", MessageBoxButton.OK);
                 return;
             }
-            if (DBConnectionService.SetSqlConnection(GetDBConnectionString(datasource, database, username, userpass)))
+            if
+                (DBConnectionService.DBConnectionService.SetSqlConnection(GetDBConnectionString(datasource, database, username, userpass)))
             {
                 MessageBox.Show("Успешное подключение!", "Соединение успешно!", MessageBoxButton.OK);
                 this.Close();

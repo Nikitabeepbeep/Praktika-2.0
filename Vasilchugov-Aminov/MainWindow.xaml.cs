@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -63,13 +64,10 @@ namespace Vasilchugov_Aminov
         //чтение текста из файла
         private void newbutton1(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == true)
-                textbox.Text = File.ReadAllText(openFileDialog.FileName);
         }
         //открытие изображения
         private void buttonOpen_Click(object sender, RoutedEventArgs e)
-        {
+        { 
             OpenFileDialog openDialog = new OpenFileDialog();
             openDialog.Filter = "Image files (*.BMP, *.JPG, *.GIF, *.TIF, *.PNG, *.ICO, *.EMF, *.WMF)|*.bmp;*.jpg;*.gif; *.tif; *.png; *.ico; *.emf; *.wmf";
 
