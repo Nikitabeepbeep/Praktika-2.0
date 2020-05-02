@@ -25,7 +25,7 @@ namespace Vasilchugov_Aminov
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
             var sb = new StringBuilder();
-            sb.AppendLine("Данную программу выполнили студенты группы 9ИСП-391к-17(УКРТБ):");
+            sb.AppendLine("Данную программу сделали студенты группы 9ИСП-391к-17:");
             sb.AppendLine("Аминов В.Т и Васильчугов Н.А");
             sb.AppendLine("Руководители практики:");
             sb.AppendLine("Лебедев В.Н");
@@ -86,10 +86,6 @@ namespace Vasilchugov_Aminov
         //mp3 плеер
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            mp3.Icon = new Image()
-            {
-                Source = new BitmapImage(new Uri("Resources/play.png", UriKind.Relative))
-            };
             MP3_PLAYER taskWindow = new MP3_PLAYER();
             taskWindow.Owner = this;
             taskWindow.Show();

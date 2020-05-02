@@ -16,38 +16,67 @@
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
         <Button ToolTip="Очищает 'Панель" Content="Очистить" HorizontalAlignment="Left" Margin="30,534,0,0" VerticalAlignment="Top" Height="25" Width="740" Click="Button_Click4" Grid.ColumnSpan="2"/>
-        <Menu Margin="30,27,24,505" Visibility="Visible" Grid.ColumnSpan="2">
-            <MenuItem ToolTip="Открывает модули программы" Header="Модули">
+        <Menu Margin="30,27,24,497" Visibility="Visible" Grid.ColumnSpan="2">
+            <MenuItem ToolTip="Открывает модули программы" Header="Модули" Width="76">
+                <MenuItem.Icon>
+                    <Image Source="Ресурсы/model.png"/>
+                </MenuItem.Icon>
                 <Separator></Separator>
                 <MenuItem ToolTip=" Позволяет присоединиться к базе данных" Header="Присоединение к БД" Click="Baza_dannyx">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/BD.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem Name="mp3" ToolTip="Позволяет воспроизводить mp3 файлы" Header="Плеер" Click="MenuItem_Click_1">
                     <MenuItem.Icon>
-                        <Image Source="Resources/play.png"/>
+                        <Image Source="Ресурсы/plaer.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem ToolTip=" Позволяет выбрать изображение для открытия"  Header="Открыть изображение" Click="buttonOpen_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/image.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem ToolTip=" Позволяет добавить текстовый файл "  Header="Добавить текстовый файл" Click="newbutton">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/TXT.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
                 <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/TXT.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem ToolTip="При нажатии на кнопку приложение закрывается" Header="Выход из программы" Click="exit_CLick">
+                <MenuItem ToolTip="При нажатии приложение закрывается" Header="Выход из программы" Click="exit_CLick">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/ARE_U_SRS.png"/>
+                    </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
-            <MenuItem ToolTip=" Позволяет изменять настройки главного окна" Header="Настройки" Click="Button_Click2">
+            <MenuItem ToolTip=" Позволяет изменять настройки окна" Header="Настройки" Click="Button_Click2" Height="36" Width="103">
+                <MenuItem.Icon>
+                    <Image Source="Ресурсы/settings.png"/>
+                </MenuItem.Icon>
             </MenuItem>
-            <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3">
+            <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3" Width="108" Height="35">
+                <MenuItem.Icon>
+                    <Image Source="Ресурсы/FAQ.png"/>
+                </MenuItem.Icon>
             </MenuItem>
-            <TextBlock RenderTransformOrigin="0.5,0.5" Height="29" Width="229">
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.319"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform><Hyperlink NavigateUri="https://github.com/Nikitabeepbeep/Praktika-2.0" Click="Application_NavigationFailed"><Run Text="Ссылка на наш репозиторий GitHub"/></Hyperlink></TextBlock>
+            <MenuItem Height="28" Width="77" Header="GitHub">
+                <TextBlock RenderTransformOrigin="0.5,0.5" Height="29" Width="229">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.319"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform><Hyperlink NavigateUri="https://github.com/Nikitabeepbeep/Praktika-2.0" Click="Application_NavigationFailed"><Run Text="Ссылка на наш репозиторий GitHub"/></Hyperlink></TextBlock>
+                <MenuItem.Icon>
+                    <Image Source="Ресурсы/GIT.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
         </Menu>
         <WrapPanel Margin="30,111,24,79" Grid.ColumnSpan="2" >
             <ListBox x:Name="kekk" Height="50" Width="383"/>
