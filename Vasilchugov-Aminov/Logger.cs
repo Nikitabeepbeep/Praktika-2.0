@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Windows;
 
 namespace Vasilchugov_Aminov
 {
@@ -24,9 +25,13 @@ namespace Vasilchugov_Aminov
 
     public class Logger : ILogger
     {
-        public Logger()
+        public Logger(LogType info)
         {
             Инициализировать();
+        }
+
+        public Logger()
+        {
         }
 
         private void Инициализировать()
@@ -48,6 +53,11 @@ namespace Vasilchugov_Aminov
             ЗаписатьВЛог(LogType.Error, сообщение);
             TException exc = new TException();
             return exc;
+        }
+
+        internal void WriteInLog(LogType info, string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

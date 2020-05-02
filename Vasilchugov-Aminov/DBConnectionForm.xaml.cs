@@ -73,6 +73,7 @@ namespace Vasilchugov_Aminov
                 MessageBox.Show("Успешное подключение!", "Соединение успешно!", MessageBoxButton.OK);
                 this.Close();
             }
+
         }
         public string GetDBConnectionString(string datasource, string database, string username, string password)
         {
