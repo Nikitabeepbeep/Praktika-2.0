@@ -52,7 +52,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Все DLL файлы\" />
+    <Folder Include="DBConnectionService\" />
   </ItemGroup>
 
 </Project>
