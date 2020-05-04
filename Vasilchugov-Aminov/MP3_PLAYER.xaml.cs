@@ -49,7 +49,11 @@ namespace Vasilchugov_Aminov
         //закрыть+остановить
         private void DA(object sender, RoutedEventArgs e)
         {
-            mediaPlayer.Stop();
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             Close();
         }
     }

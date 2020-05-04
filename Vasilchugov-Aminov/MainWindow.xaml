@@ -37,11 +37,6 @@
                         <Image Source="Ресурсы/image.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem ToolTip=" Позволяет добавить текстовый файл "  Header="Добавить текстовый файл" Click="newbutton">
-                    <MenuItem.Icon>
-                        <Image Source="Ресурсы/TXT.png"/>
-                    </MenuItem.Icon>
-                </MenuItem>
                 <MenuItem ToolTip=" Позволяет открыть текстовый файл "  Header="Открыть текстовый файл" Click="newbutton1">
                     <MenuItem.Icon>
                         <Image Source="Ресурсы/TXT.png"/>
@@ -78,8 +73,7 @@
                 </MenuItem.Icon>
             </MenuItem>
         </Menu>
-        <WrapPanel Margin="30,111,24,79" Grid.ColumnSpan="2" >
-            <ListBox x:Name="kekk" Height="50" Width="719"/>
+        <StackPanel Name="Panel" Margin="30,111,24,79" Grid.ColumnSpan="2" >
             <Button Content="" x:Name="buttonOpen" Click="buttonOpen_Click" Width="0"/>
             <Image x:Name="kek"  Height="150" Width="719" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
@@ -92,6 +86,6 @@
                 </Image.RenderTransform>
             </Image>
             <TextBox x:Name="textbox" Height="160" Width="719" TextChanged="textbox_TextChanged"/>
-        </WrapPanel>
+        </StackPanel>
     </Grid>
 </Window>

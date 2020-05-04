@@ -18,7 +18,8 @@
             <Button ToolTip="Воспроизводит композицию"  Content="Воспроизвести" Width="100" Height="20" Margin="10" Click="Button_ClickPlay"></Button>
             <Button ToolTip="Ставит на паузу композицию"  Content="Пауза" Width="100" Height="20" Margin="10" Click="Button_ClicPause"></Button>
             <Button ToolTip="Останавливает композицию" Content="Остановить" Width="100" Height="20" Margin="10" Click="Button_ClickStop"></Button>
-            <Button ToolTip="Закрывает модуль воспроизвидения аудио" Content="Закрыть" Width="100" Height="20" Margin="10" Click="DA"></Button>
+            <Button ToolTip="Скрывает модуль" Content="Скрыть" Width="100" Height="20" Margin="10" Click="DA"></Button>
         </StackPanel>
+        <Button Content="Закрыть моудуль" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>

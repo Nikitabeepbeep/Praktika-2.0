@@ -37,7 +37,6 @@ namespace Vasilchugov_Aminov
         //очистить
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-            WrapPanel wrapPanel = new WrapPanel();
             MessageBox.Show("Поле отображения  очищено!");
 
         }
@@ -48,22 +47,12 @@ namespace Vasilchugov_Aminov
             taskWindow.Owner = this;
             taskWindow.Show();
         }
-        //откртыие файла
-        private void newbutton(object sender, RoutedEventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Multiselect = true;
-            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            if (openFileDialog.ShowDialog() == true)
-            {
-                foreach (string filename in openFileDialog.FileNames)
-                    kekk.Items.Add(System.IO.Path.GetFileName(filename));
-            }
-        }
         //чтение текста из файла
         private void newbutton1(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if (openFileDialog.ShowDialog() == true)
+                textbox.Text = File.ReadAllText(openFileDialog.FileName);
         }
         //открытие изображения
         private void buttonOpen_Click(object sender, RoutedEventArgs e)
