@@ -79,19 +79,7 @@
                 </MenuItem.Icon>
             </MenuItem>
         </Menu>
-        <StackPanel Name="Panel" Margin="30,111,24,79" Grid.ColumnSpan="2" >
-            <Button Content="" x:Name="buttonOpen" Click="buttonOpen_Click" Width="0"/>
-            <Image x:Name="kek"  Height="150" Width="719" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform AngleY="0.05"/>
-                        <RotateTransform/>
-                        <TranslateTransform Y="0.332"/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <TextBox x:Name="textbox" Height="160" Width="719" TextChanged="textbox_TextChanged"/>
+        <StackPanel Name="stackPanelAdd" Margin="30,111,38,84" Grid.ColumnSpan="2" >
         </StackPanel>
     </Grid>
 </Window>

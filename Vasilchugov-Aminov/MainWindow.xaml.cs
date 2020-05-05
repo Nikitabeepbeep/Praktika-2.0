@@ -33,8 +33,11 @@ namespace Vasilchugov_Aminov
         //очистить
         private void Button_Click4(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Поле отображения  очищено!");
-
+            if (stackPanelAdd.Children.Count>0)
+            {
+            stackPanelAdd.Children.RemoveAt(stackPanelAdd.Children.Count-1);
+         }
+            MessageBox.Show("Поле отображения очищено!");
         }
         //присоединение к базе данных
         private void Baza_dannyx(object sender, RoutedEventArgs e)
@@ -46,19 +49,26 @@ namespace Vasilchugov_Aminov
         //чтение текста из файла
         private void newbutton1(object sender, RoutedEventArgs e)
         {
+            StackPanel sp = new StackPanel();
+            TextBox tb = new TextBox();
+            sp.Children.Add(tb);
+            stackPanelAdd.Children.Add(sp);
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
-                textbox.Text = File.ReadAllText(openFileDialog.FileName);
+                tb.Text = File.ReadAllText(openFileDialog.FileName);
         }
         //открытие изображения
         private void buttonOpen_Click(object sender, RoutedEventArgs e)
-        { 
+        {
+            StackPanel sp = new StackPanel();
+            Image tb = new Image();
+            sp.Children.Add(tb);
+            stackPanelAdd.Children.Add(sp);
             OpenFileDialog openDialog = new OpenFileDialog();
             openDialog.Filter = "Image files (*.BMP, *.JPG, *.GIF, *.TIF, *.PNG, *.ICO, *.EMF, *.WMF)|*.bmp;*.jpg;*.gif; *.tif; *.png; *.ico; *.emf; *.wmf";
-
             if (openDialog.ShowDialog() == true)
             {
-                kek.Source = new BitmapImage(new Uri(openDialog.FileName));
+                tb.Source = new BitmapImage(new Uri(openDialog.FileName));
             }
         }
         //текстбокс
