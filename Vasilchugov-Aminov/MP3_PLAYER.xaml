@@ -15,11 +15,22 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom"
                     HorizontalAlignment="Center">
-            <Button ToolTip="Воспроизводит композицию"  Content="Воспроизвести" Width="100" Height="20" Margin="10" Click="Button_ClickPlay"></Button>
-            <Button ToolTip="Ставит на паузу композицию"  Content="Пауза" Width="100" Height="20" Margin="10" Click="Button_ClicPause"></Button>
-            <Button ToolTip="Останавливает композицию" Content="Остановить" Width="100" Height="20" Margin="10" Click="Button_ClickStop"></Button>
-            <Button ToolTip="Скрывает модуль" Content="Скрыть" Width="100" Height="20" Margin="10" Click="DA"></Button>
+            <Button
+                ToolTip="Воспроизводит композицию" Width="78" Height="20" Margin="10" Click="Button_ClickPlay">
+                <Image Source="Ресурсы/play.png"/>
+            </Button>
+            <Button ToolTip="Ставит на паузу композицию"   Width="78" Height="20" Margin="10" Click="Button_ClicPause">
+                <Image Source="Ресурсы/pause.png"/>
+            </Button>
+            <Button ToolTip="Останавливает композицию"  Width="78" Height="20" Margin="10" Click="Button_ClickStop">
+                <Image Source="Ресурсы/stop.png"/>
+            </Button>
+            <Button ToolTip="Скрывает модуль"  Width="78" Height="20" Margin="10" Click="DA">
+                <Image Source="Ресурсы/hide.png"/>
+            </Button>
         </StackPanel>
-        <Button Content="Закрыть моудуль" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button HorizontalAlignment="Left" Width="38" Height="19" Margin="23,15,0,0" VerticalAlignment="Top" Click="Button_Click">
+            <Image Source="Ресурсы/close.png"/>
+        </Button>
     </Grid>
 </Window>

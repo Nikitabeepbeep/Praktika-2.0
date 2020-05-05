@@ -48,10 +48,16 @@
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
-            <MenuItem ToolTip=" Позволяет изменять настройки окна" Header="Настройки" Click="Button_Click2" Height="36" Width="103">
+            <MenuItem ToolTip=" Позволяет изменять настройки окна" Header="Настройки" Height="36" Width="103">
                 <MenuItem.Icon>
                     <Image Source="Ресурсы/settings.png"/>
                 </MenuItem.Icon>
+                <Separator></Separator>
+                <MenuItem ToolTip="Позволяет изменять фон окна" Header="Фон" Click="Button_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Ресурсы/palitra.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
             </MenuItem>
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3" Width="108" Height="35">
                 <MenuItem.Icon>

@@ -1,11 +1,14 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Color = System.Windows.Media.Color;
 
 namespace Vasilchugov_Aminov
 {
@@ -15,12 +18,6 @@ namespace Vasilchugov_Aminov
     public partial class MainWindow : Window
 
     {
-        //настройки
-        private void Button_Click2(object sender, RoutedEventArgs e)
-        {
-            Settings taskWindow = new Settings();
-            taskWindow.Show();
-        }
         //о программе
         private void Button_Click3(object sender, RoutedEventArgs e)
         {
@@ -88,7 +85,15 @@ namespace Vasilchugov_Aminov
             Process.Start("explorer.exe", "https://github.com/Nikitabeepbeep/Praktika-2.0");
 
         }
+        //настройка цвета главного окна
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {   
+            Random r = new Random();
+            Brush brush = new SolidColorBrush(Color.FromRgb((byte)r.Next(1, 255), (byte)r.Next(1, 255), (byte)r.Next(1, 233)));
+            Background = brush;
+        }
+
     }
-    }
+}
 
 

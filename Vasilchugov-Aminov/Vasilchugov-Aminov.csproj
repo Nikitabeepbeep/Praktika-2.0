@@ -18,12 +18,18 @@
     <None Remove="music.png" />
     <None Remove="Ресурсы\ARE_U_SRS.png" />
     <None Remove="Ресурсы\BD.png" />
+    <None Remove="Ресурсы\close.png" />
     <None Remove="Ресурсы\FAQ.png" />
     <None Remove="Ресурсы\GIT.png" />
+    <None Remove="Ресурсы\hide.png" />
     <None Remove="Ресурсы\IMAGE.png" />
     <None Remove="Ресурсы\model.png" />
+    <None Remove="Ресурсы\palitra.png" />
+    <None Remove="Ресурсы\pause.png" />
     <None Remove="Ресурсы\plaer.png" />
+    <None Remove="Ресурсы\play.png" />
     <None Remove="Ресурсы\settings.png" />
+    <None Remove="Ресурсы\stop.png" />
     <None Remove="Ресурсы\TXT.png" />
     <None Remove="Ресурсы\настройки.png" />
   </ItemGroup>
@@ -42,12 +48,18 @@
   <ItemGroup>
     <Resource Include="Ресурсы\ARE_U_SRS.png" />
     <Resource Include="Ресурсы\BD.png" />
+    <Resource Include="Ресурсы\close.png" />
     <Resource Include="Ресурсы\FAQ.png" />
     <Resource Include="Ресурсы\GIT.png" />
+    <Resource Include="Ресурсы\hide.png" />
     <Resource Include="Ресурсы\IMAGE.png" />
     <Resource Include="Ресурсы\model.png" />
+    <Resource Include="Ресурсы\palitra.png" />
+    <Resource Include="Ресурсы\pause.png" />
     <Resource Include="Ресурсы\plaer.png" />
+    <Resource Include="Ресурсы\play.png" />
     <Resource Include="Ресурсы\settings.png" />
+    <Resource Include="Ресурсы\stop.png" />
     <Resource Include="Ресурсы\TXT.png" />
   </ItemGroup>
 
