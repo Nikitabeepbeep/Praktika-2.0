@@ -37,6 +37,7 @@
     <None Remove="Ресурсы\play.png" />
     <None Remove="Ресурсы\settings.png" />
     <None Remove="Ресурсы\stop.png" />
+    <None Remove="Ресурсы\sunlight-colorful-sky-green-blue-gradient-horizon-circle-atmosphere-light-color-wave-shape-line-computer-wallpaper-atmosphere-of-earth-28820.jpg" />
     <None Remove="Ресурсы\TXT.png" />
     <None Remove="Ресурсы\user.png" />
     <None Remove="Ресурсы\настройки.png" />
@@ -74,6 +75,7 @@
     <Resource Include="Ресурсы\play.png" />
     <Resource Include="Ресурсы\settings.png" />
     <Resource Include="Ресурсы\stop.png" />
+    <Resource Include="Ресурсы\sunlight-colorful-sky-green-blue-gradient-horizon-circle-atmosphere-light-color-wave-shape-line-computer-wallpaper-atmosphere-of-earth-28820.jpg" />
     <Resource Include="Ресурсы\TXT.png" />
     <Resource Include="Ресурсы\user.png" />
   </ItemGroup>

@@ -5,11 +5,10 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media; 
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Color = System.Windows.Media.Color;
 using NLog;
-using NewDllFoel;
 
 namespace Vasilchugov_Aminov
 {
