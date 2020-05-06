@@ -9,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Color = System.Windows.Media.Color;
 using NLog;
+using NewDllFoel;
 
 namespace Vasilchugov_Aminov
 {
@@ -58,7 +59,7 @@ namespace Vasilchugov_Aminov
         //чтение текста из файла
         private void newbutton1(object sender, RoutedEventArgs e)
         {
-            logger.Info("Попытка открыть текстовый файл");
+            logger.Info("Модуль чтения текста из файла запущен");
             StackPanel sp = new StackPanel();
             TextBox tb = new TextBox();
             sp.Children.Add(tb);
