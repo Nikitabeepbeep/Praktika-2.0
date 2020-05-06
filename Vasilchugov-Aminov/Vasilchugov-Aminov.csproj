@@ -51,6 +51,9 @@
     <Reference Include="DBConnectionService">
       <HintPath>bin\Debug\netcoreapp3.1\DBConnectionService.dll</HintPath>
     </Reference>
+    <Reference Include="NLog">
+      <HintPath>bin\Debug\netcoreapp3.1\NLog.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

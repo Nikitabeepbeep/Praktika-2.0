@@ -48,7 +48,7 @@
                     </MenuItem.Icon>
                 </MenuItem>
             </MenuItem>
-            <MenuItem ToolTip=" Позволяет изменять настройки окна" Header="Настройки" Height="36" Width="103">
+            <MenuItem ToolTip=" Позволяет изменять настройки окна" Header="Настройки" Height="28" Width="126">
                 <MenuItem.Icon>
                     <Image Source="Ресурсы/settings.png"/>
                 </MenuItem.Icon>
@@ -64,7 +64,7 @@
                     <Image Source="Ресурсы/FAQ.png"/>
                 </MenuItem.Icon>
             </MenuItem>
-            <MenuItem Height="28" Width="77" Header="GitHub">
+            <MenuItem Height="28" Width="77" Header="GitHub" Click="MenuItem_Click">
                 <TextBlock RenderTransformOrigin="0.5,0.5" Height="29" Width="229">
                     <TextBlock.RenderTransform>
                         <TransformGroup>

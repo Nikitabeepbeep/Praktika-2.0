@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
+using NLog;
 
 namespace Vasilchugov_Aminov
 {
@@ -9,7 +10,8 @@ namespace Vasilchugov_Aminov
     /// Логика взаимодействия для DBConnectionForm.xaml
     /// </summary>
     public partial class DBConnectionForm : Window
-    {
+    { 
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         public DBConnectionForm()
         {
             InitializeComponent();
@@ -37,6 +39,7 @@ namespace Vasilchugov_Aminov
         //закрыть
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
+            logger.Info("Моудль подключения к БД закрыт");
             this.Close();
         }
         //соединение c БД
@@ -48,29 +51,34 @@ namespace Vasilchugov_Aminov
             string userpass = userpassBox.Text ?? "";
             //обработка ошибок при подключении к БД
             if (string.IsNullOrEmpty(datasource) || string.IsNullOrEmpty(database))
-            {
+            {    
                 MessageBox.Show("Пожалуйста,заполните поля!", "Ошибка соединения!", MessageBoxButton.OK);
+                logger.Error("Пожалуйста,заполните поля!", "Ошибка соединения!");
                 return;
             }
             if (string.IsNullOrEmpty(database) || string.IsNullOrEmpty(database))
             {
                 MessageBox.Show("Пожалуйста,заполните поля!", "Ошибка соединения!", MessageBoxButton.OK);
+                logger.Error("Пожалуйста,заполните поля!", "Ошибка соединения!");
                 return;
             }
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(database))
             {
                 MessageBox.Show("Пожалуйста,заполните поля!", "Ошибка соединения!", MessageBoxButton.OK);
+                logger.Error("Пожалуйста,заполните поля!", "Ошибка соединения!");
                 return;
             }
             if (string.IsNullOrEmpty(userpass) || string.IsNullOrEmpty(database))
             {
                 MessageBox.Show("Пожалуйста,заполните поля!", "Ошибка соединения!", MessageBoxButton.OK);
+                logger.Error("Пожалуйста,заполните поля!", "Ошибка соединения!");
                 return;
             }
             if
                 (DBConnectionService.DBConnectionService.SetSqlConnection(GetDBConnectionString(datasource, database, username, userpass)))
             {
                 MessageBox.Show("Успешное подключение!", "Соединение успешно!", MessageBoxButton.OK);
+                logger.Info("Успешное подключение");
                 this.Close();
             }
 
