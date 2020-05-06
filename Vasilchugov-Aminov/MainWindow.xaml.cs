@@ -126,6 +126,128 @@ namespace Vasilchugov_Aminov
         {
 
         }
+        private void cmb_NumbersOrders_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 320;
+            Application.Current.MainWindow.Height = 240;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 640;
+            Application.Current.MainWindow.Height = 480;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 800;
+            Application.Current.MainWindow.Height = 600;
+            logger.Info("Размер главного окна изменён!");
+
+        }
+
+        private void ComboBoxItem_Selected_2(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1024;
+            Application.Current.MainWindow.Height = 768;
+            logger.Info("Размер главного окна изменён!");
+
+        }
+
+        private void ComboBoxItem_Selected_3(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1152;
+            Application.Current.MainWindow.Height = 864;
+            logger.Info("Размер главного окна изменён!");
+
+        }
+
+        private void ComboBoxItem_Selected_4(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1280;
+            Application.Current.MainWindow.Height = 600;
+            logger.Info("Размер главного окна изменён!");
+
+        }
+
+        private void ComboBoxItem_Selected_5(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1280;
+            Application.Current.MainWindow.Height = 720;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_6(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1280;
+            Application.Current.MainWindow.Height = 800;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_7(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1280;
+            Application.Current.MainWindow.Height = 960;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_8(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1280;
+            Application.Current.MainWindow.Height = 1024;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_9(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1360;
+            Application.Current.MainWindow.Height = 768;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_10(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1366;
+            Application.Current.MainWindow.Height = 768;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_11(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1400;
+            Application.Current.MainWindow.Height = 1050;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_12(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1440;
+            Application.Current.MainWindow.Height = 900;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_13(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1600;
+            Application.Current.MainWindow.Height = 900;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_14(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1680;
+            Application.Current.MainWindow.Height = 1050;
+            logger.Info("Размер главного окна изменён!");
+        }
+
+        private void ComboBoxItem_Selected_15(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Width = 1920;
+            Application.Current.MainWindow.Height = 1080;
+            logger.Info("Размер главного окна изменён!");
+        }
     }
 }
 

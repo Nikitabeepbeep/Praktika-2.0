@@ -58,6 +58,35 @@
                         <Image Source="Ресурсы/palitra.png"/>
                     </MenuItem.Icon>
                 </MenuItem>
+                <ComboBox Height="28" Width="126" ToolTip="Позволяет изменить разрешение главного окна" x:Name="cb">
+                    <ComboBoxItem Content="320x240" Selected="cmb_NumbersOrders_SelectionChanged" Width="168">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="640x480" Selected="ComboBoxItem_Selected">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="800x600" Selected="ComboBoxItem_Selected_1">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1024x768" Selected="ComboBoxItem_Selected_2">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1152х864" Selected="ComboBoxItem_Selected_3">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1280х768" Selected="ComboBoxItem_Selected_4">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1280х800" Selected="ComboBoxItem_Selected_5">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1280х800" Selected="ComboBoxItem_Selected_6">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1280x960" Selected="ComboBoxItem_Selected_7">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1280x1024" Selected="ComboBoxItem_Selected_8">
+                    </ComboBoxItem>
+                    <ComboBoxItem Content="1360x768" Selected="ComboBoxItem_Selected_9"/>
+                    <ComboBoxItem Content="1366x768" Selected="ComboBoxItem_Selected_10"/>
+                    <ComboBoxItem Content="1400x1050" Selected="ComboBoxItem_Selected_11"/>
+                    <ComboBoxItem Content="1440x900" Selected="ComboBoxItem_Selected_12"/>
+                    <ComboBoxItem Content="1600x900" Selected="ComboBoxItem_Selected_13"/>
+                    <ComboBoxItem Content="1650x1050" Selected="ComboBoxItem_Selected_14"/>
+                    <ComboBoxItem Content="1920х1080" Selected="ComboBoxItem_Selected_15"/>
+                </ComboBox>
             </MenuItem>
             <MenuItem ToolTip="Сведения о программе" Header="О программе" Click="Button_Click3" Width="108" Height="35">
                 <MenuItem.Icon>
