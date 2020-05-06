@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DBConnectionService\**" />
     <Compile Remove="Resourses\**" />
+    <EmbeddedResource Remove="DBConnectionService\**" />
     <EmbeddedResource Remove="Resourses\**" />
+    <None Remove="DBConnectionService\**" />
     <None Remove="Resourses\**" />
+    <Page Remove="DBConnectionService\**" />
     <Page Remove="Resourses\**" />
   </ItemGroup>
 
@@ -69,10 +73,6 @@
     <Resource Include="Ресурсы\stop.png" />
     <Resource Include="Ресурсы\TXT.png" />
     <Resource Include="Ресурсы\user.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DBConnectionService\" />
   </ItemGroup>
 
 </Project>
